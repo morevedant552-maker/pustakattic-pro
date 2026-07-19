@@ -47,17 +47,14 @@ body {
   font-feature-settings: 'rlig' 1, 'calt' 1;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Selection color */
 ::selection {
   @apply bg-primary text-primary-foreground;
 }
 
-/* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -71,12 +68,10 @@ html {
   @apply bg-muted-foreground rounded-full hover:bg-foreground;
 }
 
-/* Focus styles for accessibility */
 :focus-visible {
   @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;

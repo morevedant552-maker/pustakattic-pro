@@ -30,7 +30,6 @@ export function Footer() {
         className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8"
       >
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-          {/* Brand */}
           <motion.div variants={item}>
             <h3 className="text-xl font-bold text-gradient mb-4">PUSTAKATTIC</h3>
             <p className="text-sm text-foreground/60">
@@ -39,7 +38,6 @@ export function Footer() {
             </p>
           </motion.div>
 
-          {/* Shop */}
           <motion.div variants={item}>
             <h4 className="font-semibold mb-4">Shop</h4>
             <ul className="space-y-2 text-sm text-foreground/60">
@@ -64,7 +62,6 @@ export function Footer() {
             </ul>
           </motion.div>
 
-          {/* Help */}
           <motion.div variants={item}>
             <h4 className="font-semibold mb-4">Help</h4>
             <ul className="space-y-2 text-sm text-foreground/60">
@@ -86,7 +83,6 @@ export function Footer() {
             </ul>
           </motion.div>
 
-          {/* Legal */}
           <motion.div variants={item}>
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm text-foreground/60">
@@ -109,10 +105,8 @@ export function Footer() {
           </motion.div>
         </div>
 
-        {/* Divider */}
         <div className="border-t border-border my-8" />
 
-        {/* Bottom */}
         <motion.div
           variants={item}
           className="flex flex-col md:flex-row justify-between items-center text-sm text-foreground/60"

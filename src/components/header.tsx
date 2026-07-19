@@ -36,7 +36,6 @@ export function Header() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between gap-8">
-          {/* Logo */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -50,7 +49,6 @@ export function Header() {
             </Link>
           </motion.div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-1">
             {navItems.map((item, i) => (
               <motion.div
@@ -69,7 +67,6 @@ export function Header() {
             ))}
           </nav>
 
-          {/* Right side actions */}
           <motion.div
             className="flex items-center gap-4"
             initial={{ opacity: 0, x: 20 }}

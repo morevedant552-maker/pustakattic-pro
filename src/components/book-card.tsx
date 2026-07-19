@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { formatPrice } from '@/lib/utils'
-from 'lucide-react'
 import { Heart } from 'lucide-react'
 
 interface BookCardProps {
@@ -43,7 +42,6 @@ export function BookCard({
     >
       <Link href={`/book/${id}`}>
         <div className="premium-card h-full flex flex-col overflow-hidden">
-          {/* Image Container */}
           <div className="relative aspect-[3/4] overflow-hidden bg-muted mb-4">
             {image ? (
               <motion.img
@@ -58,7 +56,6 @@ export function BookCard({
               </div>
             )}
 
-            {/* Discount Badge */}
             {discount > 0 && (
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -69,7 +66,6 @@ export function BookCard({
               </motion.div>
             )}
 
-            {/* Wishlist Button */}
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
@@ -86,7 +82,6 @@ export function BookCard({
             </motion.button>
           </div>
 
-          {/* Content */}
           <div className="flex-1 flex flex-col justify-between">
             <div>
               <h3 className="font-semibold text-foreground line-clamp-2 mb-1 group-hover:text-primary transition-colors">
@@ -94,7 +89,6 @@ export function BookCard({
               </h3>
               <p className="text-sm text-foreground/60 mb-3">{author}</p>
 
-              {/* Rating */}
               {rating > 0 && (
                 <div className="flex items-center gap-1 mb-3">
                   <div className="flex gap-0.5">
@@ -118,7 +112,6 @@ export function BookCard({
               )}
             </div>
 
-            {/* Price & Button */}
             <div className="space-y-3">
               <div>
                 {discount > 0 ? (

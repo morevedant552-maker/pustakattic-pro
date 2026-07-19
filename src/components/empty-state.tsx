@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Book, Search } from 'lucide-react'
+import { Book } from 'lucide-react'
 
 export function EmptyState() {
   return (

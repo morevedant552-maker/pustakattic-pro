@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Utility classes for premium design */
 @layer components {
   .glass {
     @apply backdrop-blur-xl bg-white/10 border border-white/20;
